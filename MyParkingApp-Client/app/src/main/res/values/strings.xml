@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MyParkingApp-Client</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_add_timer">add_timer</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="title_activity_gps">Map</string>
+    <string name="title_activity_gps_db_display">Gps_db_display</string>
+    <string name="loc_id_hint">Location Id</string>
+    <string name="loc_name_hint">Location</string>
+    <string name="lat_hint">Latitude</string>
+    <string name="lon_hint">Longitude</string>
+    <string name="title_activity_timer_display">Timer_display</string>
+    <string name="dont_show">Do Not Show This Again</string>
+
+    <string name="title_activity_area_select">Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="enable_p2p_button">P2P On/Off</string>
+    <string name="discover_peers_button">Discover</string>
+    <string name="connect_peer_button">Connect</string>
+    <string name="disconnect_peer_button">Disconnect</string>
+    <string name="get_file_button">Verify Authentication</string>
+    <string name="empty"></string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="client_text">Click On Button To Find Empty Slot.</string>
+    <string name="empty_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
+    <string name="p2p_off_warning">Enable P2P from action bar button above or system settings</string>
+    <string name="group_owner_text">"Am I the Owner? "</string>
+    <string name="label_me">ME</string>
+    <string name="label_peers">PEERS</string>
+    <string name="cancel">Cancel</string>
+    <string name="about_item">About</string>
+    <string name="regenerateContent_item">Regenerate content</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout_wifi"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_wifi_direct"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linearLayout1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <fragment
+                android:layout_marginTop="?attr/actionBarSize"
+                class="com.infi.myparkingapp_client.DeviceListFragment"
+                android:id="@+id/frag_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/phone_list_height">
+                <!-- Preview: layout=@layout/row_devices -->
+            </fragment>
+            <fragment
+                class="com.infi.myparkingapp_client.DeviceDetailFragment"
+                android:id="@+id/frag_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- Preview: layout=@layout/device_detail -->
+            </fragment>
+        </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view_wifi"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view"/>
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

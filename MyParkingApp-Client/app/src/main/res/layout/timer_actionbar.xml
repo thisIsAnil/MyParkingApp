@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar android:id="@+id/timer_actionBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:popupTheme="@style/Theme.AppCompat.Light"
+    android:background="#CECED2"
+    android:titleTextColor="@android:color/black"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/tb_cancel_btn"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border_for_button"
+            android:text="Cancel"
+
+            />
+        <TextView
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="22sp"
+            />
+        <Button
+            android:id="@+id/tb_save_btn"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border_save_btn"
+            android:text="Save"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+   </android.support.v7.widget.Toolbar>

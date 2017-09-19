@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="60dp"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    >
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_title"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+    <TextView
+        android:id="@+id/list_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_keyboard_arrow_right_black_48dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>

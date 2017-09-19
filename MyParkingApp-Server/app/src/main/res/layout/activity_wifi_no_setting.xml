@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_wifi_direct"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways|snap" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/linearLayout1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <fragment
+                class="com.example.asus.myparkingapp.DeviceListFragment"
+                android:id="@+id/frag_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/phone_list_height">
+                <!-- Preview: layout=@layout/row_devices -->
+            </fragment>
+            <fragment
+                class="com.example.asus.myparkingapp.DeviceDetailFragment"
+                android:id="@+id/frag_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- Preview: layout=@layout/device_detail -->
+            </fragment>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

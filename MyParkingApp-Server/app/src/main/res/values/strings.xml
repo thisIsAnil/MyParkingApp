@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">MyParkingApp-Server</string>
+    <string name="title_activity_area_select">Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="enable_p2p_button">P2P On/Off</string>
+    <string name="discover_peers_button">Discover</string>
+    <string name="connect_peer_button">Connect</string>
+    <string name="disconnect_peer_button">Disconnect</string>
+    <string name="get_file_button">Verify Authentication</string>
+    <string name="empty"></string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="client_text">Click On Button To Find Empty Slot.</string>
+    <string name="empty_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
+    <string name="p2p_off_warning">Enable P2P from action bar button above or system settings</string>
+    <string name="group_owner_text">"Am I the Owner? "</string>
+    <string name="label_me">ME</string>
+    <string name="label_peers">PEERS</string>
+    <string name="cancel">Cancel</string>
+    <string name="use_password">Use password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="ok">Ok</string>
+    <string name="password">Password</string>
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="password_description">Enter your store password to continue</string>
+    <string name="purchase">Authenticate</string>
+    <string name="purchase_not_invalidated">Authentication Failed</string>
+    <string name="purchase_button_not_invalidated_description">
+        You can proceed to authenticate with this button \n even if a new fingerprint is enrolled
+    </string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="item_title">FingerPrint</string>
+    <string name="item_price">1.2.1</string>
+    <string name="item_description">Authenticate Using FingerPrint</string>
+    <string name="purchase_done">Authentication successful</string>
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_title">Use fingerprint to authenticate</string>
+    <string name="use_fingerprint_to_authenticate_key" >use_fingerprint_to_authenticate_key</string>
+      <string name="intro_message">
+        <![CDATA[
+
+
+Use FingerPrint For Authentication.
+
+
+        ]]>
+    </string>
+
+
+    <string name="discover_nearby_devices">Discover nearby devices</string>
+    <string name="share_device_information">Share device information</string>
+    <string name="subscription_key">Add Microsoft Cognitive API key</string>
+    <string name="nearbyKey">Add Google Nearby key</string>
+    <!-- Main activity -->
+    <string name="detection">Detection</string>
+    <string name="face_verification">Face to Face Verification</string>
+    <string name="person_verification">Face to Person Verification</string>
+    <string name="verification">Verification</string>
+    <string name="identification">Identification</string>
+    <string name="grouping">Grouping</string>
+    <string name="find_similar_faces">Find Similar Faces</string>
+    <string name="detection_description">Detect faces, face landmarks, pose, smile, glasses, gender, and age.</string>
+    <string name="verification_description">Authentication between two faces or between a face and a person.</string>
+    <string name="grouping_description">Group faces based on similarity.</string>
+    <string name="find_similar_face_description">Search for similar-looking faces.</string>
+    <string name="identification_description">Identify the person from a face.</string>
+
+    <!-- Tips to get subscription key shown on main activity-->
+    <string name="add_subscription_key_tip_title">Subscription Key is Needed</string>
+    <string name="add_subscription_key_tip">Please put your subscription key to source file \"app/res/values/strings.xml\" to enable Face API calls.</string>
+
+    <!-- Detection activity -->
+    <string name="image">Image:</string>
+    <string name="select_image">Select\nImage</string>
+    <string name="result">Result:</string>
+    <string name="detect">Detect</string>
+
+    <!-- Verification activity -->
+    <string name="verify">Verify</string>
+    <string name="face_0">Face0:</string>
+    <string name="face_1">Face1:</string>
+    <string name="manage_persons">Manage\nPersons</string>
+    <string name="verification_menu">Verification\nMenu</string>
+
+    <!-- Verification activity -->
+    <string name="face">Face:</string>
+    <string name="group">Group</string>
+
+    <!-- Identification activity -->
+    <string name="identify">Identify</string>
+    <string name="manage_person_groups">Manage\nPerson\nGroups</string>
+    <string name="person_groups">Person Groups</string>
+    <string name="target_image">Target image</string>
+    <string name="faces">Faces in image</string>
+
+    <!-- Person group management activities -->
+    <string name="delete">Delete</string>
+    <string name="done_and_save">Save</string>
+
+    <string name="person_group_list">Person Group List</string>
+    <string name="person_group_list_tip">- Tap on a group to edit.\n- Long tap to delete.</string>
+    <string name="add_person_group">Add Person Group</string>
+
+    <string name="person_group">Person Group</string>
+    <string name="person_group_tip">- Tap on a person to edit.\n- Long press to delete.</string>
+    <string name="person_group_name">Person group name:</string>
+    <string name="type_in_person_group_name_tip">Name (within 30 characters)</string>
+    <string name="add_person">Add Person</string>
+    <string name="person_vehicle_name">Vehicle Name</string>
+
+    <string name="person">Person</string>
+    <string name="persons">Persons</string>
+    <string name="person_tip">- Long press on a face to delete.</string>
+    <string name="type_in_person_name_tip">Name (within 30 characters)</string>
+    <string name="type_in_vehicle_tip">(eg.AA 12 XX 1111)</string>
+    <string name="add_face">Add Face</string>
+    <string name="person_name">Person name:</string>
+    <string name="add_face_to_person">Add Faces To Person</string>
+    <string name="select_face_tip">Select this person\'s faces (if exist) by click on the checkbox.</string>
+    <string name="vehicle_name">Vehicle No.</string>
+    <!-- Find similar faces and grouping activity -->
+    <string name="zero_face">Face list: 0 faces in total</string>
+    <string name="target_face">Target face:</string>
+    <string name="all_faces">All Faces:</string>
+    <string name="add_faces">Add\nFaces</string>
+    <string name="similar_face_description">Finding 4 matchFace faces...</string>
+
+    <!-- Common in all activities -->
+    <string name="progress_dialog_title">Please wait</string>
+    <string name="view_log">View Log</string>
+
+    <!-- Select image activity -->
+    <string name="select_an_image">Select an Image</string>
+    <string name="take_photo">Take a Photo</string>
+    <string name="select_image_in_album">From Gallery</string>
+
+    <!-- Logs -->
+    <string name="log">Log:</string>
+    <string name="detection_log">Detection Log</string>
+    <string name="verification_log">Verification Log</string>
+    <string name="find_similar_face_log">Find Similar Face Log</string>
+    <string name="grouping_log">Grouping Log</string>
+    <string name="identification_log">Identification Log</string>
+
+    <!-- Warning messages -->
+    <string name="person_name_empty_warning_message">Person name cannot be empty</string>
+    <string name="vehicle_no_invalid">Vehicle No Format is Invalid</string>
+    <string name="no_face_to_group">No faces to group</string>
+    <string name="no_person_group_selected_for_identification_warning">No person group selected</string>
+    <string name="face_cannot_be_identified">Unknown person</string>
+    <string name="user_provided_person_name">Person name</string>
+    <string name="user_provided_description_data">User data</string>
+    <string name="user_provided_person_group_name">Person group name</string>
+    <string name="user_provided_person_group_description_data">User data</string>
+
+</resources>

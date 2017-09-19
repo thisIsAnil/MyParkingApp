@@ -1,0 +1,154 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.infi.myparkingapp_client">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Google Play filtering -->
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" />
+    <application
+        android:fullBackupContent="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo">
+        <activity android:name=".ParkingClientMain"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+      
+        <activity
+            android:name=".gps"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_gps"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+        <activity
+            android:name=".main_Detail"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Gps_detail"
+            android:launchMode="singleTask"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Timer"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:label="Timer"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <service
+            android:name=".GpsService"
+            android:enabled="true"
+            android:label="SilenceService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="GpsService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".TimerBroadCastReciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".GpsBroadcastReciever"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="YouCantSeeMe" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".OnRebootReciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".SilentBroadCastReciever"
+            android:enabled="true" />
+
+        <service
+            android:name=".SilentIntent"
+            android:enabled="true" />
+        <service android:name=".TimerService" />
+
+        <receiver
+            android:name=".OnProximityBr"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="ACTION_PROXIMITY_ALERT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".OnCancelBr"
+            android:enabled="true" />
+        <activity android:name=".SimulationActivity"/>
+        <activity android:name=".AccessDeniedActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AccessGrantedActivity"/>
+        <activity android:name=".WiFiDirectActivity">
+
+        </activity>
+        <service android:enabled="true" android:name=".FileTransferService" />
+    </application>
+
+</manifest>

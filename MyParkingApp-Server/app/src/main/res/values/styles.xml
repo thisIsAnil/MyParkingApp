@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MyAppTheme.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Theme.Base" parent="android:Theme.Light" />
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo">
+    </style>
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#8ab73a</item>
+        <item name="colorPrimaryDark">#4CAF50</item>
+        <item name="colorAccent">#33691E</item>
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+    <style name="Theme.Sample" parent="Theme.Base" />
+
+
+    <!-- Widget styling -->
+
+    <style name="Widget" />
+
+    <style name="Widget.SampleMessage">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="Widget.SampleMessageTile">
+    <item name="android:background">@drawable/tile</item>
+    <item name="android:shadowColor">#7F000000</item>
+    <item name="android:shadowDy">-3.5</item>
+    <item name="android:shadowRadius">2</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>
