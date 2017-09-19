@@ -1,1 +1,3 @@
 # MyParkingApp
+Android App Soultion for validating and allocating parking slot problem statement in COEP'S MINDSPARK'16 HACKATHON.
+The application uses camera installed on device running MyParking App Server and automatically clicks images whenever a person is detected in frame of camera  and validates the person using <a href="https://azure.microsoft.com/en-in/services/cognitive-services/face/" >Microsoft's Cognitive Services Face API</a>.<br> Once Validated the person is allocated an empty parking slot number based on shortest distance algorithm. The solution assumes predefined static map of parking area i.e a rectangular area which can be resize for different width and height from settings(Note: All previous data will be lost if setting is changed).
